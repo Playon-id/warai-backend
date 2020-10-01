@@ -1,16 +1,11 @@
-
-<p align="center"><img src="https://user-images.githubusercontent.com/396987/82162573-6940f500-98c7-11ea-974e-888b4f866c74.jpg" alt="Laravel Starter - A CMS like modular starter project built with Laravel"></p>
-
-# Laravel Starter
-**Laravel Starter** is a Laravel 7.x based simple starter project. It can be used to build all type of applications. Most of the commonly needed features like Authentication, Application Backend, Backup, Logviewer are available here. It is modular, so you can use this project as a base and build your own modules. You can use the same module in any of the Laravel starter based projects. New features and functionalities are being added on a regular basis.
-
-Please let me know your feedback and comments.
+# Warai
+**Warai** merupakan aplikasi yang bisa digunakan untuk orang tua atau wali murid yang membutuhkan pendamping belajar bagi anak-anaknya. Kami menggunakan [**Laravel Starter**](https://github.com/nasirkhan/laravel-starter) dalam project awal aplikasi ini.
 
 
 # Demo
-Check the following demo project. It is just a straight installation of the project without any modification.
+Periksa proyek demo berikut. Ini hanya instalasi langsung dari proyek tanpa modifikasi apa pun.
 
-Demo URL: http://laravel.nasirkhn.com
+Demo URL: menyusul
 
 ```
 User: super@admin.com
@@ -21,34 +16,34 @@ Pass: secret
 
 ```
 
-# Custom Commands
+# Perintah Kustom
 
-We have created a number of custom commands for the project. The commands are listed below with a brief about the use of it.
+Kami telah membuat sejumlah perintah khusus untuk proyek tersebut. Perintah-perintah tersebut didaftar di bawah ini dengan penjelasan singkat tentang penggunaannya.
 
-## Clear All Cache
+## Hapus Semua Cache
 
 `composer clear-all`
 
-this is a shortcut command clear all cache including config, route and more
+ini adalah perintah pintas, hapus semua cache termasuk konfigurasi, rute, dan lainnya
 
-## Code Style Fix
+## Perbaikan Gaya Kode
 
 `composer fix-cs`
 
-apply the code style fix by this command.
+terapkan perbaikan gaya kode dengan perintah ini.
 
 
-# Features
+# Fitur
 
-The `Laravel Starter` comes with a number of features which are the most common in almost all the applications. It is a template project which means it is intended to build in a way that it can be used for other projects.
+The `Laravel Starter` dilengkapi dengan sejumlah fitur yang paling umum di hampir semua aplikasi. Ini adalah proyek templat yang artinya dimaksudkan untuk dibangun sedemikian rupa sehingga dapat digunakan untuk proyek lain.
 
-It is a modular application, and a number of modules are installed by default. It will be helpful to use it as a base for the future applications.
+Ini adalah aplikasi modular, dan sejumlah modul diinstal secara default. Akan sangat membantu jika menggunakannya sebagai dasar untuk aplikasi di masa mendatang.
 
-* Admin feature and public views are completely separated as `Backend` and `Frontend` namespace.
-* Major feature are developed as `Modules`. Module like Posts, Comments, Tags are separated from the core features like User, Role, Permission
+* Fitur Admin dan pandangan masyarakat yang sepenuhnya terpisah sebagai `Backend` dan `Frontend` namespace.
+* Fitur utama dikembangkan sebagai `Modules`. Modul seperti Pos, Komentar, Tag dipisahkan dari fitur inti seperti Pengguna, Peran, Izin
 
 
-## Core Features
+## Fitur Admin
 
 * User Authentication
 * Social Login
@@ -91,52 +86,26 @@ It is a modular application, and a number of modules are installed by default. I
   * Dashboard and details view
 * RSS Feed
 
+## Fitur Inti yang akan dibuat
+* Module Parent
+* Module Teacher
+* Module Order
 
-# User Guide
+# Panduan pengguna
 
-## Installation
+## Instalasi
 
-Follow the steps mentioned below to install and run the project.
+Ikuti langkah-langkah yang disebutkan di bawah ini untuk menginstal dan menjalankan proyek.
 
-1. Clone or download the repository
-2. Go to the project directory and run `composer install`
-3. Create `.env` file by copying the `.env.example`. You may use the command to do that `cp .env.example .env`
-4. Update the database name and credentials in `.env` file
-5. Run the command `php artisan migrate --seed`
-6. Link storage directory: `php artisan storage:link`
-7. You may create a virtualhost entry to access the application or run `php artisan serve` from the project root and visit `http://127.0.0.1:8000`
+1. Gandakan atau unduh repositori
+2. Buka direktori proyek dan jalankan `composer install`
+3. Buat `.env` file dengan menyalin `.env.example`. Anda dapat menggunakan perintah untuk melakukan itu `cp .env.example .env`
+4. Perbarui nama database dan kredensial dalam `.env` file
+5. Jalankan perintahnya `php artisan migrate --seed`
+6. Tautan direktori penyimpanan: `php artisan storage:link`
+7. Anda dapat membuat entri virtualhost untuk mengakses aplikasi atau menjalankan `php artisan serve` dari root proyek dan mengunjungi `http://127.0.0.1:8000`
 
-*After creating the new permissions use the following commands to update cashed permissions.*
+*Setelah membuat izin baru, gunakan perintah berikut untuk memperbarui izin yang diuangkan.*
 
 `php artisan cache:forget spatie.permission.cache`
-
-
-## Icons
-FontAwesome & CoreUI Icons, two different font icon library is installed for the Backend theme and only FontAwesome for the Frontend. For both of the cases we used the free version. You may install the pro version separately for your own project.
-
-* **FontAwesome** - https://fontawesome.com/icons?d=gallery&m=free
-* **CoreUI Icons** - https://icons.coreui.io/icons/
-
-
-# Screenshots
-
-__Home Page__
-
-![Laravel Starter Home](https://user-images.githubusercontent.com/396987/67085331-74606500-f1c0-11e9-8187-99fe49134075.png)
-
-__Login Page__
-
-![Laravel Starter Login](https://user-images.githubusercontent.com/396987/67085329-74606500-f1c0-11e9-8669-3638e30cb449.png)
-
-__Backend Dashboard__
-
-![Backend Dashboard](https://user-images.githubusercontent.com/396987/88489727-f3889200-cfb7-11ea-819f-dc9a52bc8d82.jpg)
-
----
-
-![List-Posts-Laravel-Starter](https://user-images.githubusercontent.com/396987/88519250-a0dcc380-d013-11ea-9dc5-9d731af611f1.jpg)
-
----
-
-![Edit-Posts-Laravel-Starter](https://user-images.githubusercontent.com/396987/88519360-d1bcf880-d013-11ea-9f6c-b5d33912057f.jpg)
 

@@ -103,7 +103,8 @@ Ikuti langkah-langkah yang disebutkan di bawah ini untuk menginstal dan menjalan
 4. Perbarui nama database dan kredensial dalam `.env` file
 5. Jalankan perintahnya `php artisan migrate --seed`
 6. Tautan direktori penyimpanan: `php artisan storage:link`
-7. Anda dapat membuat entri virtualhost untuk mengakses aplikasi atau menjalankan `php artisan serve` dari root proyek dan mengunjungi `http://127.0.0.1:8000`
+7. Setelah selesai dengan langkah di atas maka buat dulu key supaya website tidak error gateway `php artisan key:generate`. maka bisa di lihat dibagian file `.env` maka code `APP_KEY=base64:` akan terisi dengan sebuah token.
+8. Anda dapat membuat entri virtualhost untuk mengakses aplikasi atau menjalankan `php artisan serve` dari root proyek dan mengunjungi `http://127.0.0.1:8000`
 
 *Setelah membuat izin baru, gunakan perintah berikut untuk memperbarui izin yang diuangkan.*
 

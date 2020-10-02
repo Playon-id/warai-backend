@@ -2,5 +2,6 @@
     "Article": true,
     "Tag": true,
     "Comment": true,
-    "Teacher": true
+    "Teacher": true,
+    "Parent": true,
 }
